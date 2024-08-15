@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Place = require('../models/place');
 const hereMaps = require('../utils/hereMaps');
 
-mongoose.connect('mongodb://127.0.0.1/yelp_clone')
+mongoose.connect('mongodb+srv://ariadiaditya:mZlR9yFTi0nX2RqW@yelpclone.sphszxx.mongodb.net/?retryWrites=true&w=majority&appName=yelpclone')
     .then((result) => {
         console.log('connected to mongodb')
     }).catch((err) => {
@@ -161,7 +161,7 @@ async function seedPlaces() {
         }
         return {
             ...place,
-            author: '643d36579773b789e91ef660',
+            author: '66ab4a9814fcdf9b9a4bfc49',
             images: {
                 url: 'public\\images\\image-1681876521153-260851838.jpg',
                 filename: 'image-1681876521153-260851838.jpg'
